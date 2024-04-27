@@ -24,6 +24,7 @@ public class FPSController : MonoBehaviour
     private bool _runInput;
 
     private Vector3 _moveDirection = Vector3.zero;
+
     private float _rotationX = 0;
     private float _currentSpeedX;
     private float _currentSpeedZ;
