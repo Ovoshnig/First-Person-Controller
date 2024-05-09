@@ -8,26 +8,24 @@ public class FPSController : MonoBehaviour
     [SerializeField] private float _runSpeed;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _gravity;
-
     [SerializeField] private float _rotationSpeed;
     [SerializeField] private float _xRotationLimit;
-
     [SerializeField] private bool _canMove = true;
 
     private CharacterController _characterController;
     private PlayerInput _playerInput;
     private Transform _cameraTransform;
-
     private Vector2 _movementInput;
     private Vector2 _lookInput;
     private bool _jumpInput;
     private bool _runInput;
-
     private Vector3 _moveDirection = Vector3.zero;
     private float _rotationX = 0;
     private float _currentSpeedX;
     private float _currentSpeedZ;
     private float _movementDirectionY;
+
+    public bool CanMove { get => _canMove; set => _canMove = value; }
 
     private void Awake()
     {
